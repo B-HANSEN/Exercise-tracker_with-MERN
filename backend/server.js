@@ -23,6 +23,13 @@ mongoose.connect(db, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTo
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
+// setup routes: import & use
+const exercisesRouter = require('./routes/exercises');
+const usersRouter = require('./routes/users');
+app.use('/exercises', exercisesRouter);
+app.use('/users', usersRouter);
+
+
 
 // starts server, starts listening on a certain port
 app.listen(port, () => {
