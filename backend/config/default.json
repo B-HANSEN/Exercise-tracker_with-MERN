@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://Bjoern:test123@exercise-tracking-app-oohhu.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "tobedefined"
+}
